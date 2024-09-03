@@ -1,0 +1,57 @@
+site_name: Documentação DW
+docs_dir: pages
+theme:
+  name: material
+  language: pt-BR
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/toggle-switch 
+        name: Switch to dark mode'
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  
+  features:
+    - navigation.path
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.integrate 
+    - content.tabs.link
+    - content.tooltips
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+  logo: 'images/imagem-2.png'
+  favicon: 'images/imagem-2.png'
+
+plugins:
+  - macros
+  - search
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  generator: false
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
